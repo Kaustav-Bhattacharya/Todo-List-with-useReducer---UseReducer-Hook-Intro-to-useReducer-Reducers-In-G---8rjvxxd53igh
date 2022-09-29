@@ -10,7 +10,7 @@ const App = () => {
     <div id="main">
       <AddTodo dispatch={dispatch} />
       {state.map((task) => (
-        <>
+ 
         <Todo
           className="todo"
           key={task.id}
@@ -18,13 +18,7 @@ const App = () => {
           value={task.title}
           dispatch={dispatch}
         />
-        <button
-        className="todo-delete"
-        onClick={() => dispatch({ type: "delete_todo", payload: { id: task.id } })}
-      >
-        Delete
-      </button>
-      </>
+
       ))}
     </div>
   );
