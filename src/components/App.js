@@ -12,7 +12,6 @@ const App = () => {
       {state.map((task) => (
  
         <Todo
-          className="todo"
           key={task.id}
           id={task.id}
           value={task.title}
